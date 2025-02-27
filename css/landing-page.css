@@ -22,7 +22,8 @@ h6 {
 }
 
 .topnav {
-    font-size: 14px; 
+    color: #f8f8f8 !important;
+    font-size: 20px; 
 }
 
 .lead {
@@ -35,7 +36,7 @@ h6 {
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: url(../img/intro-bg.jpg) no-repeat center center;
+    background: url(../img/SmartNext-Banner.png) no-repeat center center;
     background-size: cover;
 }
 
@@ -47,8 +48,9 @@ h6 {
 
 .intro-message > h1 {
     margin: 0;
+    color: #d3176b;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-    font-size: 5em;
+    font-size: 10em;
 }
 
 .intro-divider {
@@ -58,7 +60,22 @@ h6 {
 }
 
 .intro-message > h3 {
+    color: #03acdc;
+    font-weight: 900;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+.navbar-default {
+    background-color:#d3176b;
+}
+
+.navtext {
+    color:#f8f8f8 !important;
+}
+
+.btn-default {
+    background-color: #03acdc !important;
+    border: none;
 }
 
 @media(max-width:767px) {
