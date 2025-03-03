@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://smartnext-landing.vercel.app/sitemap.xml
