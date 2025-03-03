@@ -136,23 +136,66 @@
 
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script type="application/ld+json">
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Product",
   "name": "SmartNext",
   "description": "Dispositivo de comunicación avanzada para emergencias, industrias críticas y seguridad pública.",
-  "brand": "SmartNext",
+  "brand": {
+    "@type": "Brand",
+    "name": "SmartNext"
+  },
   "image": "https://smartnext-landing.vercel.app/img/logo-texto.png",
+  "sku": "SNX-001",
   "offers": {
     "@type": "Offer",
     "url": "https://smartnext-landing.vercel.app/",
     "priceCurrency": "USD",
-    "price": "Consultar",
-    "availability": "https://schema.org/InStock"
+    "price": "0.00", 
+    "availability": "https://schema.org/InStock",
+    "shippingDetails": {
+      "@type": "OfferShippingDetails",
+      "shippingRate": {
+        "@type": "MonetaryAmount",
+        "value": "499.99",
+        "currency": "USD"
+      },
+      "shippingDestination": {
+        "@type": "DefinedRegion",
+        "addressCountry": "PE"
+      },
+      "deliveryTime": {
+        "@type": "ShippingDeliveryTime",
+        "businessDays": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["https://schema.org/Monday", "https://schema.org/Friday"]
+        },
+        "handlingTime": {
+          "@type": "QuantitativeValue",
+          "minValue": 1,
+          "maxValue": 2,
+          "unitText": "days"
+        },
+        "transitTime": {
+          "@type": "QuantitativeValue",
+          "minValue": 3,
+          "maxValue": 5,
+          "unitText": "days"
+        }
+      }
+    },
+    "hasMerchantReturnPolicy": {
+      "@type": "MerchantReturnPolicy",
+      "returnPolicyCategory": "https://schema.org/ReturnUnspecified",
+      "merchantReturnDays": 30,
+      "returnMethod": "https://schema.org/ReturnByMail",
+      "returnFees": "https://schema.org/FreeReturn"
+    }
   }
 }
 </script>
+
 
 </body>
 
